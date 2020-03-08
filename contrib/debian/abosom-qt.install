@@ -1,0 +1,6 @@
+usr/local/bin/abosom-qt usr/bin
+share/pixmaps/abosom32.xpm usr/share/pixmaps
+share/pixmaps/abosom16.xpm usr/share/pixmaps
+share/pixmaps/abosom128.png usr/share/pixmaps
+debian/abosom-qt.desktop usr/share/applications
+debian/abosom-qt.protocol usr/share/kde4/services/

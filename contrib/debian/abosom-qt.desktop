@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Abosom Core
+Comment=Abosom P2P Cryptocurrency
+Comment[de]=Verbinde mit dem Abosom peer-to-peer Netzwerk
+Comment[fr]=Abosom, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Abosom, eşten eşe kriptografik sanal para birimi
+Exec=abosom-qt %u
+Terminal=false
+Type=Application
+Icon=abosom128
+MimeType=x-scheme-handler/abosom;
+Categories=Office;Finance;

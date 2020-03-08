@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+#  abosomd The Abosom Core server.
+#
+#
+# chkconfig: 345 80 20
+# description: abosomd
+# processname: abosomd
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/abosomd, see below
+if [ -f /etc/sysconfig/abosomd ]; then
+        . /etc/sysconfig/abosomd
+fi
+
+RETVAL=0
+
+prog=abosomd
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/abosomd
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/abosomd}
+
+# abosomd defaults to /usr/bin/abosomd, override with BITCOIND_BIN
+abosomd=${BITCOIND_BIN-/usr/bin/abosomd}
+
+# abosomd opts default to -disablewallet, override with BITCOIND_OPTS
+abosomd_opts=${BITCOIND_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $abosomd $abosomd_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac

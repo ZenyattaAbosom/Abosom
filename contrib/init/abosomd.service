@@ -1,0 +1,22 @@
+[Unit]
+Description=Abosom's distributed currency daemon
+After=network.target
+
+[Service]
+User=abosomcore
+Group=abosomcore
+
+Type=forking
+PIDFile=/var/lib/abosomd/abosomd.pid
+ExecStart=/usr/bin/abosomd -daemon -pid=/var/lib/abosomd/abosomd.pid \
+-conf=/etc/abosomcore/abosom.conf -datadir=/var/lib/abosomd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
