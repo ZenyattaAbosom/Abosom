@@ -5,23 +5,41 @@ ABOSOM Core integration/staging tree
 [![Build Status](https://travis-ci.org/abosompay/abosom.svg?branch=master)](https://travis-ci.org/abosompay/abosom)
 
 
-http://www.abosompay.org
+http://www.abosom.org
 
 - Copyright (c) 2009-2015 Bitcoin Developers
 - Copyright (c) 2014-2017 Dash Developers
-- Copyright (c) 2017-2019 Abosom Developers
+- Copyright (c) 2019-2020 Abosom Developers
 
 What is Abosom?
 ----------------
 
-Abosom is an experimental digital currency that enables anonymous, instant
+Abosom is the manifestation of a DAO in it's purest form. A technological lifeform, birthed through necessity,
+nurtured to maturity and then released to inspire and protect.
+
+The EaaB model is simple; A blockchain creates an arbitrary number of tokens,
+this total supply represents the value of the blockchain.
+People and organisations can freely, privately and pseudononymously transfer these coins and thus the value contained therin,
+this process does not acknowledge borders or sanctions and is very close to traditional shares
+when the buy back burn method is employed.
+
+Buyback Burn
+ 
+Any entity wishing to add value to the blockchain and distribute it among all the token holders can do so using the Buyback Burn model.
+The entity must buy the tokens on the open market and then burn them.
+Burning tokens can be achieved by sending them to an address that does not and never will have a private key.
+These burn addresses can stil be pubically audited and monitored so burnage is a very public act.
+This gives all entities inolved with Abosom transparency,
+equality and most important, soveriegnty 
+
+Abosom is an experimental digital value network that enables anonymous, instant
 payments to anyone, anywhere in the world. Abosom uses peer-to-peer technology
 to operate with no central authority: managing transactions and issuing money
 are carried out collectively by the network. Abosom Core is the name of the open
-source software which enables the use of this currency.
+source software which enables the use of this bnetwork.
 
 For more information, as well as an immediately useable, binary version of
-the Abosom Core software, see https://www.abosompay.org/Find-abosom/.
+the Abosom Core software, see https://www.abosom.org
 
 
 License
