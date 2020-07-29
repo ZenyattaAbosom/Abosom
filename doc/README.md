@@ -1,7 +1,7 @@
-Abosom Core 0.12.1
+Abosom Core 1.0.0
 =====================
 
-This is the official reference wallet for Abosom digital currency and comprises the backbone of the Abosom peer-to-peer network. You can [download Abosom Core](https://www.abosompay.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for Abosom digital currency and comprises the backbone of the Abosom peer-to-peer network. You can [download Abosom Core](https://www.abosom.org) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
