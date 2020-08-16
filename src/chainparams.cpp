@@ -320,7 +320,7 @@ public:
             // abosom BIP32 pubkeys start with 'ppub' (Abosom Prefix)
             base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x80)(0x00)(0x01)(0xc8).convert_to_container<std::vector<unsigned char> >();
             // abosom BIP32 prvkeys start with 'pprv' (Abosom Prefix)
-            base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x80)(0x00)(0x01)(0xc8).convert_to_container<std::vector<unsigned char> >();
+            base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x80)(0x01)(0x01)(0xc8).convert_to_container<std::vector<unsigned char> >();
 
             // abosom BIP44 coin type is '5'
             nExtCoinType = 7834;
