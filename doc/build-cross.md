@@ -40,7 +40,14 @@ Windows 64bit/32bit Cross-compilation
 Cross-compiling to Windows requires a few additional packages to be installed:
 
 ```bash
-$ sudo apt-get install nsis wine-stable wine64 bc
+$ sudo apt-get install nsis wine-stable wine64 bc   
+# wine64 and wine-stable may error out, if so proceed as stated below
+$ wget -nc https://dl.winehq.org/wine-builds/winehq.key
+$ sudo apt-key add winehq.key
+$ sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ xenial main'
+$ sudo apt update
+$ sudo apt install --install-recommends winehq-stable
+$ sudo apt-get install wine64-development-tools
 ```
 
 For Windows 64bit, install :
