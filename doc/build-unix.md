@@ -36,6 +36,7 @@ These dependencies are required:
  libssl      | Crypto           | Random Number Generation, Elliptic Curve Cryptography
  libboost    | Utility          | Library for threading, data structures, etc
  libevent    | Networking       | OS independent asynchronous networking
+ BLS sigs    | Crypto		| Advanced Signature scheme
 
 Optional dependencies:
 
@@ -95,6 +96,15 @@ are based on BerkeleyDB 4.8. If you do not care about wallet compatibility,
 pass `--with-incompatible-bdb` to configure.
 
 See the section "Disable-wallet mode" to build Abosom Core without wallet.
+
+BLSSignatures is required for the wallet.
+
+   	wget https://github.com/codablock/bls-signatures/archive/v20181101.zip
+	unzip v20181101.zip
+	cd bls-signatures-20181101
+	cmake .
+	make install
+	cd ..
 
 Optional (see --with-miniupnpc and --enable-upnp-default):
 
